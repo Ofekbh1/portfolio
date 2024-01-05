@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html
+lang="en">
+<head>
+<meta
+charset="utf-8"> 
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="assets/css/starter.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-image: url('assets/imagess/WhatsApp\ Image\ 2024-01-05\ at\ 19.25.28.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top; /* Adjusted starting position */
+      height: 40vh;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    header:hover {
+      transform: scale(1.08); /* Zoom the image 1.1x */
+    }
+    /* Rectangle with text */
+    .skill-rectangle {
+      background-color: gray;
+      padding: 20px;
+      margin-top: 20px; /* Adjust spacing as needed */
+    }
+
+    .skill-rectangle p {
+      color: white; /* Ensure text visibility on gray background */
+    }
+    .skill-rectangle div:first-child {
+      display: grid;
+      grid-template-rows: 1fr 1fr; /* Two equal rows */
+    }
+  </style>
+  <title>Ofek Ben Hamo</title>
+</head>
+<body>
+  </body>
+</html>
+  <body style="background-color: #232324;">
+    <div class="col-md-8 py-5 px-3 mx-auto">
+
+      <header class="pb-3 mb-5 border-bottom">
+        <h1 class="h4">
+          <span style = "color: white">Ofek Ben Hamo</span>
+      </h1>
+
+      </header>
+
+      <h5 style = "color: white">about</h5>
+      <div class="white-line">
+        <p class="lead" style = "color: white" class =  "border-buttom mb-5 pb-3" >Hi, my name is Ofek Ben Hamo 
+          I am a 3rd-year computer science student at HIT College.
+          In the first year, I was included on the dean's list, my grade average is 93.
+          In the last year, I did a project at the company OriginGPS in the field of Embedd that dealt with development in BLE technology.
+          I am currently doing an internship at Belleat in a DevOps position.
+          I am a self-learner and highly motivated to learn and develop as much as possible. </p>
+
+      </div>
+      <h5 style="color: white">Links</h5>
+      <div class="center-text">
+        <p>
+          <!-- LinkedIn link -->
+          <a href="https://www.linkedin.com/in/ofek-ben-hamo/" target="_blank">
+            <img src="assets/imagess/icons8-linkedin.gif" alt="LinkedIn Image" style="width: 40px; height: 40px;"> <!-- Adjust the path and dimensions as needed -->
+          </a>
+          
+          <!-- Github link -->
+          <a href="https://github.com/Ofekbh1" target="_blank">
+            <img src="assets/imagess/icons8-github.gif" alt="Github Image" style="width: 40px; height: 40px;"> <!-- Adjust the path and dimensions as needed -->
+          </a>
+          
+          <!-- Download CV button -->
+          <button id="downloadBtn" class="download-button" style="width: 40px; height: 42px;" onclick=downloadCV()>
+            CV
+          </button>
+        </p>
+      </div>
+  
+      <script>
+        function downloadCV() {
+          // Replace "path/to/your/cv.pdf" with the actual path to your PDF file
+          var cvPath = "assets/pdf/CV-ofek_ben_Hamo.pdf";
+  
+          // Open the PDF in a new tab
+          window.open(cvPath, '_blank');
+        }
+      </script>
+
+      <body style="background-color: #232324;">
+      <h5 style="color: white">My skills</h5>
+      <div class="skill-rectangle">
+        <div>
+          <div>
+            <p>C                                    AWS </p><br>
+            <p>C++                                  C#</p>
+            <p>C#</p>
+            <p>SQL</p>
+            <p>BLE</p>
+          </div>
+          <div>
+            <p>AWS</p>
+            <p>JAVASCRIPT</p>
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+        </div>
+      </div>
+    <br>
+    <h5 style="color: white">Connect me</h5>
+    <div class="center-text">
+      <div>
+        <p style="color: white">0526438433     
+          <a href="ofek53330@gmail.com" target="_blank">
+            <img src="assets/imagess/icons8-email.gif" alt="email Image" style="width: 40px; height: 40px;"> <!-- Adjust the path and dimensions as needed -->
+          </a>
+        </p>
+      </div>  
+    </div>
+  </div>
+  </body>
+</html>
+
