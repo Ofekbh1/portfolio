@@ -1,131 +1,127 @@
 <!DOCTYPE html>
-<html
-lang="en">
+<html lang="en">
 <head>
-<meta
-charset="utf-8"> 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1">  
-<link rel="stylesheet" href="assets/css/starter.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-image: url('assets/imagess/WhatsApp\ Image\ 2024-01-05\ at\ 19.25.28.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center top; /* Adjusted starting position */
-      height: 40vh;
-      transition: transform 0.3s ease-in-out;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+        }
 
-    header:hover {
-      transform: scale(1.08); /* Zoom the image 1.1x */
-    }
-    /* Rectangle with text */
-    .skill-rectangle {
-      background-color: gray;
-      padding: 20px;
-      margin-top: 20px; /* Adjust spacing as needed */
-    }
+        .bg-gradient-custom {
+            background: linear-gradient(45deg, #6e48aa, #9d50bb);
+        }
 
-    .skill-rectangle p {
-      color: white; /* Ensure text visibility on gray background */
-    }
-    .skill-rectangle div:first-child {
-      display: grid;
-      grid-template-rows: 1fr 1fr; /* Two equal rows */
-    }
-  </style>
-  <title>Ofek Ben Hamo</title>
+        .card-custom {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+        }
+
+        .btn-custom {
+            background-color: #4caf50;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #43a047;
+        }
+
+        .icon-size {
+            width: 40px;
+            height: 40px;
+        }
+        header {
+            background: url('./assets/imagess/WhatsApp Image 2024-01-05 at 19.25.28.jpeg') top center/cover no-repeat !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        header:hover {
+            transform: scale(1.08);
+        }
+    </style> 
+       <title>Ofek Ben Hamo</title>
 </head>
 <body>
-  </body>
-</html>
-  <body style="background-color: #232324;">
-    <div class="col-md-8 py-5 px-3 mx-auto">
+    <div class="container py-5">
+        <header class="bg-gradient-custom text-center text-white py-5">
+            <h1>Ofek Ben Hamo</h1>
+        </header>
 
-      <header class="pb-3 mb-5 border-bottom">
-        <h1 class="h4">
-          <span style = "color: white">Ofek Ben Hamo</span>
-      </h1>
+        <section class="row mt-4">
+            <div class="col-md-6">
+                <div class="card card-custom p-3 mb-3">
+                    <h5>About</h5>
+                    <p>
 
-      </header>
+Hi, my name is Ofek Ben Hamo I am a 3rd-year computer science student at HIT College. In the first year, I was included on the dean's list, my grade average is 93. In the last year, I did a project at the company OriginGPS in the field of Embedd that dealt with development in BLE technology. I am currently doing an internship at Belleat in a DevOps position. I am a self-learner and highly motivated to learn and develop as much as possible.
+</p>
+                </div>
 
-      <h5 style = "color: white">about</h5>
-      <div class="white-line">
-        <p class="lead" style = "color: white" class =  "border-buttom mb-5 pb-3" >Hi, my name is Ofek Ben Hamo 
-          I am a 3rd-year computer science student at HIT College.
-          In the first year, I was included on the dean's list, my grade average is 93.
-          In the last year, I did a project at the company OriginGPS in the field of Embedd that dealt with development in BLE technology.
-          I am currently doing an internship at Belleat in a DevOps position.
-          I am a self-learner and highly motivated to learn and develop as much as possible. </p>
+                <div class="card card-custom p-3 mb-3">
+                    <h5>My Skills</h5>
+                    <div class="row">
+                        <div class="col">
+                            <p>C</p>
+                            <p>C++</p>
+                            <p>C#</p>
+                            <p>SQL</p>
+                            <p>BLE</p>
+                        </div>
+                        <div class="col">
+                            <p>AWS</p>
+                            <p>JAVASCRIPT</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      </div>
-      <h5 style="color: white">Links</h5>
-      <div class="center-text">
-        <p>
-          <!-- LinkedIn link -->
-          <a href="https://www.linkedin.com/in/ofek-ben-hamo/" target="_blank">
-            <img src="assets/imagess/icons8-linkedin.gif" alt="LinkedIn Image" style="width: 40px; height: 40px;"> <!-- Adjust the path and dimensions as needed -->
-          </a>
-          
-          <!-- Github link -->
-          <a href="https://github.com/Ofekbh1" target="_blank">
-            <img src="assets/imagess/icons8-github.gif" alt="Github Image" style="width: 40px; height: 40px;"> <!-- Adjust the path and dimensions as needed -->
-          </a>
-          
-          <!-- Download CV button -->
-          <button id="downloadBtn" class="download-button" style="width: 40px; height: 42px;" onclick=downloadCV()>
-            CV
-          </button>
-        </p>
-      </div>
-  
-      <script>
-        function downloadCV() {
-          // Replace "path/to/your/cv.pdf" with the actual path to your PDF file
-          var cvPath = "assets/pdf/CV-ofek_ben_Hamo.pdf";
-  
-          // Open the PDF in a new tab
-          window.open(cvPath, '_blank');
-        }
+            <div class="col-md-6">
+                <div class="card card-custom p-3 mb-3">
+                    <h5>Links</h5>
+                    <a href="https://www.linkedin.com/in/ofek-ben-hamo/">
+                        <img src="assets/imagess/icons8-linkedin.gif" alt="LinkedIn" class="icon-size">
+                    </a>
+                    <a href="https://github.com/Ofekbh1/">
+                        <img src="assets/imagess/icons8-github.gif" alt="Git-hub" class="icon-size">
+                    </a>
+                    <a href="mailto:ofek53330@gmail.com">
+                        <img src="assets/imagess/icons8-email.gif" alt="LinkedIn" class="icon-size">
+                    </a>
+                </div>
+
+                <div class="card card-custom p-3">
+                    <h5>Connect Me</h5>
+                    <p>0526438433</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-4">
+          <button class="btn btn-custom" onclick="downloadCV()">Download CV</button>
+        </footer>
+
+        <script>
+          function downloadCV() {
+              var cvPath = "assets/pdf/CV-ofek_ben_Hamo.pdf";
+              window.open(cvPath, '_blank');
+          }
       </script>
-
-      <body style="background-color: #232324;">
-      <h5 style="color: white">My skills</h5>
-      <div class="skill-rectangle">
-        <div>
-          <div>
-            <p>C                                    AWS </p><br>
-            <p>C++                                  C#</p>
-            <p>C#</p>
-            <p>SQL</p>
-            <p>BLE</p>
-          </div>
-          <div>
-            <p>AWS</p>
-            <p>JAVASCRIPT</p>
-            <p>HTML</p>
-            <p>CSS</p>
-          </div>
-        </div>
-      </div>
-    <br>
-    <h5 style="color: white">Connect me</h5>
-    <div class="center-text">
-      <div>
-        <p style="color: white">0526438433     
-          <a href="ofek53330@gmail.com" target="_blank">
-            <img src="assets/imagess/icons8-email.gif" alt="email Image" style="width: 40px; height: 40px;"> <!-- Adjust the path and dimensions as needed -->
-          </a>
-        </p>
-      </div>  
     </div>
-  </div>
-  </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
 
